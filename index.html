@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kannika_Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="progressBar"></div>
+<div class="cursor-glow"></div>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">Kannikaparameswari M</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+        <li class="nav-item"><a class="nav-link" href="#internship">Internship</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      <div class="col-md-7 text-center text-md-start">
+        <h1>Kannikaparameswari</h1>
+        <h3 class="typing"></h3>
+
+        <div class="mt-4 d-flex gap-3 justify-content-center justify-content-md-start">
+          <a href="#contact" class="btn btn-hire">Hire Me</a>
+          <a href="kannikaresume.pdf" download class="btn btn-resume">
+            <i class="fa fa-download"></i> Resume
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-5 text-center">
+        <img src="kannika_pic.png" class="profile-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container text-center">
+    <h2 class="mb-4">About Me</h2>
+
+    <div class="about-card mx-auto">
+      <p>
+        I am a passionate <strong>Frontend Developer</strong> with a strong foundation in
+        HTML, CSS, JavaScript, and modern UI frameworks like Bootstrap.
+        I enjoy transforming ideas into responsive, interactive, and user-friendly
+        web applications.
+
+        <br><br>
+
+        Currently, I am gaining hands-on industry experience through an internship,
+        where I work on real-time projects such as web interfaces, dynamic components,
+        and performance-optimized layouts. I am a quick learner, detail-oriented,
+        and motivated to continuously improve my skills.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="section-bg">
+<div class="container">
+<h2 class="text-center mb-4">Skills</h2>
+<div class="row g-4 text-center">
+  <div class="col-md-4 col-6"><div class="skill-card">C</div></div>
+  <div class="col-md-4 col-6"><div class="skill-card">Python</div></div>
+  <div class="col-md-4 col-6"><div class="skill-card">HTML/CSS</div></div>
+  <div class="col-md-4 col-6"><div class="skill-card">JavaScript</div></div>
+  <div class="col-md-4 col-6"><div class="skill-card">React</div></div>
+  <div class="col-md-4 col-6"><div class="skill-card">bootstrap</div></div>
+  <div class="col-md-4 col-6"><div class="skill-card">GitHub</div></div>
+</div>
+  
+</div>
+</div>
+</section>
+
+
+<div class="cert-track">
+  
+  <!-- Certificate 1 -->
+  <div class="cert-card">
+    <div class="cert-img">
+      <img src="images/img.jpg" alt="Frontend Certificate">
+      <div class="cert-overlay">
+        <button onclick="openCert('Completed an in-depth HTML certification from Great Learning, gaining strong fundamentals in semantic markup, responsive structure, and modern web standards.')">
+          View Details
+        </button>
+      </div>
+    </div>
+    <h5>HTML Certification -Great Learning</h5>
+  </div>
+
+  <!-- Certificate 2 -->
+  <div class="cert-card">
+    <div class="cert-img">
+      <img src="images/img1.jpg" alt="CSS Certification – Great Learning">
+      <div class="cert-overlay">
+        <button onclick="openCert('Successfully completed a CSS certification from Great Learning, focusing on layouts, animations, responsive design, and modern UI styling techniques.')">
+          View Details
+        </button>
+      </div>
+    </div>
+    <h5>CSS Certification - Great Learning</h5>
+  </div>
+
+  <!-- Certificate 3 -->
+  <div class="cert-card">
+    <div class="cert-img">
+      <img src="images/img2.jpg" alt="Internship Certificate">
+      <div class="cert-overlay">
+        <button onclick="openCert('Actively participated in the FOSSEE Mapathon 2023 organized by IIT Bombay, contributing to open-source mapping and geospatial data projects.')">
+          View Details
+        </button>
+      </div>
+    </div>
+    <h5>FOSSEE Mapathon Participant-IIT Bombay (2023)</h5>
+  </div>
+
+  <!-- Certificate 4 -->
+  <div class="cert-card">
+    <div class="cert-img">
+      <img src="images/img3.jpg" alt="React Certificate">
+      <div class="cert-overlay">
+        <button onclick="openCert('Certified by IBM for developing a Drowsiness Detection and Alerting System, applying computer vision and AI concepts to enhance road safety.')">
+          View Details
+        </button>
+      </div>
+    </div>
+    <h5>Drowsiness Detection & Alerting System - IBM</h5>
+  </div>
+
+  <!-- Certificate 5 -->
+  <div class="cert-card">
+    <div class="cert-img">
+      <img src="images/img4.jpg" alt="Paper Presentation Winner – Science Club">
+      <div class="cert-overlay">
+        <button onclick="openCert('Won a prize for paper presentation at a college Science Club event, demonstrating strong research skills, technical knowledge, and effective communication.')">
+          View Details
+        </button>
+      </div>
+    </div>
+    <h5>Paper Presentation Winner-Science Club</h5>
+  </div>
+
+
+</div>
+<!-- MODAL -->
+<div class="cert-modal" id="certModal">
+  <div class="cert-content">
+    <span class="close-btn" onclick="closeCert()">&times;</span>
+    <h4 id="certTitle"></h4>
+    <p>This certificate validates skills and practical experience.</p>
+  </div>
+</div>
+
+<!-- INTERNSHIP -->
+
+<section id="internship" class="section-bg">
+  <div class="container text-center">
+    <h2 class="mb-4">Internship</h2>
+
+    <div class="intern-card mt-4">
+      <h5 class="company">Adhoc Software</h5>
+      <p class="role">Frontend Developer Intern</p>
+
+      <p class="intern-text short" id="internText">
+        Currently pursuing a Frontend Developer internship where I am gaining
+        hands-on experience in building responsive web interfaces using HTML,
+        CSS, JavaScript,react and modern UI practices. I actively collaborate with
+        team members, work on real-time projects, and enhance my problem-solving
+        and development skills.
+      </p>
+
+      <button class="read-btn" onclick="readMore()">Read More</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="section-bg">
+  <div class="container">
+    <h2 class="text-center mb-5">Contact Me</h2>
+
+    <div class="row justify-content-center g-4">
+
+      <!-- Contact Card -->
+      <div class="col-md-5">
+        <div class="contact-card">
+          <h4>Get In Touch</h4>
+
+        <div class="contact-item">
+  <i class="fa-solid fa-envelope"></i>
+  <a href="mailto:kannikam.cse@gmail.com?subject=Contact%20from%20Portfolio&body=Hello%20Kannikam,"
+     class="contact-link">
+     kannikam.cse@gmail.com
+  </a>
+</div>
+
+
+          <div class="contact-item">
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/kannikaM" target="_blank">
+              www.linkedin.com/in/kannikaM
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Message Card -->
+      <div class="col-md-5">
+        <div class="contact-card">
+          <h4>Send Message</h4>
+
+          <form onsubmit="sendMail(event)">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn btn-hire w-100 mt-3">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
